@@ -7,29 +7,50 @@
 </head>
 
 <body>
-    <header id="main-header" class="bg-primary text-white p-4 mb-3">
+    <header id="main-header" class="bg-primary text-white p-2 mb-3">
         <div class="container">
-        <h1 id="header-title">Item Lister</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 id="header-title">TODO LIST</h1>
+                </div>
+                <div class="col-md-4 align-self-center">
+                        <input type="text" class="form-control" id="filter" placeholder="Search Items..">
+                </div>
+            </div>
         </div>
     </header>
     <div class="container">
         <div id="main" class="card card-body">
-            <h2 class="title">Add Item</h1>
-            <form class="form-inline mb-3">
-                    <input type="text" class="form-control mr-2" name="submit" placeholder="Tekan..">
+            <h2 class="title">Add Todo</h1>
+            <form id="addForm" class="form-inline mb-3">
+                    <input type="text" id="item" class="form-control mr-2" name="submit" placeholder="Tekan..">
+                    <!-- <select class="form-control mr-2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select> -->
                     <input type="submit" class="btn btn-primary" value="submit">
             </form>
-            <h2 class="title">Items</h2>
+            <h2 class="title">Todo</h2>
             <ul id="items" class="list-group">
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 1</li>
-                <li class="list-group-item">Item 1</li>             
+                <!-- <li class="list-group-item">Item 1 <button 
+                    class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 2 <button 
+                    class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 3 <button 
+                    class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Item 4 <button 
+                    class="btn btn-danger btn-sm float-right delete">X</button></li>              -->
             </ul>
+            <div id="output"></div>
+            <br>
+            <!-- <button  class="btn btn-dark btn-block" id="button">Click Here</button>
+            <div id="box" style="width:400px;height:200px;background: #f4f4f4">HELLO</div> -->
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="index.js"></script> -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
